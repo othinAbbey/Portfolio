@@ -7,7 +7,10 @@ h2 {
   color: rgb(0, 24, 11);
   text-align: center;
   font-size: small;
+  font-weight: lighter;
+  background-color: brown;
 }
 h3 {
   color: rgb(73, 7, 2);
+  background-color: rgb(77, 0, 0);
 }
