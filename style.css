@@ -1,17 +1,238 @@
-h1 {
-  color: rgb(1, 31, 1);
+header {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to left,
+      #5c5959,
+      #333 50%,
+      orange 75%
+      /* #f3b7b7 75% */
+    );
+  color: #fff;
+  align-items: center;
   text-align: center;
-   background-color: brown;
+  justify-content: space-between;
 }
 
-h2 {
-  color: rgb(0, 24, 11);
-  text-align: center;
-  font-size: small;
+.logo {
+  width: 10%;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 5%;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+}
+
+.navList li {
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+.navList li:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 20px;
+  margin: 0px;
+  justify-content: center;
+}
+
+.titleW {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.titleW h1 {
+  margin-top: 0px;
+  justify-content: center;
+}
+
+.titleW p {
   font-weight: lighter;
-  background-color: brown;
+  margin-top: 0px;
+  justify-content: center;
 }
-h3 {
-  color: rgb(73, 7, 2);
-  /* background-color: rgb(77, 0, 0); */
+
+.image {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+  float: left;
+  margin-right: 20px;
 }
+
+
+
+.read-more-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+input[type="checkbox"]:checked+.read-more-label+.read-more-content {
+  max-height: 500px;
+  /* Adjust the value based on your content */
+}
+
+.read-more-label {
+  cursor: pointer;
+  color: blue;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+
+
+
+.projects-container{
+  /* display: flex; */
+  /* flex-direction: row; */
+  background-color: grey;
+  width: auto;
+}
+
+.projects-container label {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:inherit;
+  cursor: pointer;
+}
+
+.projects-container input[type="radio"]{
+  display: none;
+}
+.projects-container input[type="radio"]:checked + label{
+  background-color: #ccc;
+}
+
+.projects-content{
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+.projects{
+  display: none;
+}
+
+#project1:checked ~ .projects-content #project1,
+#project2:checked ~ .projects-content #project2,
+#project3:checked ~ .projects-content #project3,
+#project4:checked ~ .projects-content #project4,
+#project5:checked ~ .projects-content #project5{
+  display: block;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-right: 20px;
+}
+
+/* .avv {
+  position: relative;
+  padding-top: auto;
+} */
+/* .intro {
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(251, 146, 8);
+} */
+/* .about {
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(251, 146, 8);
+} */
+/* .contact {
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(251, 146, 8);
+} */
+/* .social {
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(251, 146, 8);
+} */
+/* .media {
+  position: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(251, 146, 8);
+} */
+/* .welcome ul {
+  background-color: aqua;
+  /* display: flex; */
+
+/* width: 50%; */
+/* align-items: center;
+  text-align: center;
+  /* justify-content: space-between; */
+/* list-style-type: none; */
+/* } */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(251, 146, 8);
+}
+.container h1 {
+  align-items: center;
+  text-align: center;
+  background-color: rgb(251, 146, 8);
+}
+.container li {
+  margin-right: 30px;
+  list-style-type: none;
+}
+.container ul {
+  display: flex;
+} */
