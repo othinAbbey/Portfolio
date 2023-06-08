@@ -241,3 +241,56 @@ input[type="checkbox"]:checked+.read-more-label+.read-more-content {
 .footer ul li {
   margin-right: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+  
+ 
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    opacity: 1;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .navList {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .navList li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .navList {display: block;}
+  .navList li:hover {background-color: #ddd;}
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    header{
+      background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+    }
+  .navList{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+}
