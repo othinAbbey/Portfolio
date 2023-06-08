@@ -242,7 +242,7 @@ input[type="checkbox"]:checked+.read-more-label+.read-more-content {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 751px) {
   #leftsidebar {width: 200px; float: left;}
   #main {margin-left: 216px;}
   
@@ -254,28 +254,35 @@ input[type="checkbox"]:checked+.read-more-label+.read-more-content {
     font-size: 16px;
     border: none;
     opacity: 1;
+    margin-right: 20px;
   }
   .dropdown {
     position: relative;
     display: inline-block;
     margin-right: 20px;
-    padding-right: 20px;
+    padding: 0;
   }
   .navList {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f81919;
+    /* min-width: 160px; */
     z-index: 1;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-right: 20px;
+    padding:0%
+ 
+   
   }
   .navList li {
+    display: flex;
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
+    margin-right: 10px;
+    text-align: center;
+    justify-items: center;
+    padding-top: 5px;
+    
   }
   .dropdown:hover .navList {display: block;}
   .navList li:hover {background-color: #ddd;}
