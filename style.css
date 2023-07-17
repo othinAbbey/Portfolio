@@ -1,0 +1,90 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #111;
+}
+
+.sidenav {
+  height: 100%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 0px;
+}
+.sidenav em {
+  color: white;
+  justify-items: center;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+.main {
+  margin-left: 190px; /*Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+  color: #818181;
+  padding-left: 40px;
+}
+.myWork {
+  background-color: transparent;
+}
+.myWork:hover {
+  background: linear-gradient(to left, #fff 50%, transparent 50%);
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  max-width: 50%;
+  opacity: 0.9;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: 15rem;
+}
+.button {
+  width: 15rem;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: pink;
+  border-style: solid;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+.button:hover {
+  letter-spacing: 1px;
+  text-align: center;
+  opacity: 0.9;
+  background: linear-gradient(to left, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
