@@ -11,19 +11,20 @@
   <body>
     <div id="root">
       <div class="sidenav">
-
-
-        <a href="#" class="dropdown">
-          &lt; &quot; Menu &quot; &gt;
-          <a href="#">Submenu Item 1</a>
-            <a href="#">Submenu Item 2</a>
-            <!-- Add more submenu items as needed -->
-        </a>
-
+        <div class="menu">
         <a href="#about">&lt; &quot; About &quot; &gt;</a>
         <a href="#services">&lt; &quot; Services  &quot; &gt;</a>
         <a href="#clients">&lt; &quot; Clients &quot; &gt;</a>
         <a href="#contact">&lt; &quot; Contact &quot; &gt;</a>
+      </div>
+        <div class="dropdown" >
+          <button class="menu-button" >MENU</button>
+          <a href="#" class="dropdownList">
+            &lt; &quot; Menu &quot; &gt;
+            <a href="#">Submenu Item 1</a>
+              <a href="#">Submenu Item 2</a>
+          </a>
+          </div>
         <div>
           <ul>
             <li><a href="#" class="fa fa-facebook"></a></li>
@@ -132,9 +133,13 @@
         <button class="button">Mail Me</button>
       </div>
     </div>
+    <script src="script.js" ></script>
       </body>
       <footer>
         <p>onyango abbey @ 2023</p>
         <a href="mailto:onyangoabbey@gmail.com">onyangoabbey@gmail.com</a>
       </footer>
 </html>
+
+
+

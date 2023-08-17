@@ -92,7 +92,13 @@ body {
 }
 @media screen and (max-height: 450px) {
   .sidenav {
+    display: none;
     padding-top: 15px;
+  }
+  .sidenav .dropdown {
+    display: block;
+    position: relative;
+    display: inline-block;
   }
   .sidenav a {
     font-size: 18px;
@@ -100,13 +106,23 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .menu-button {
+    display: block;
+  }
+  .sidenav .menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: none;
+  }
   .sidenav .dropdown {
+    display: flex;
     position: relative;
     display: inline-block;
   }
 
   .sidenav .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -119,12 +135,7 @@ body {
   .main {
     margin-left: 0px;
   }
-  .sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: none;
-  }
+
   .sidenav ul {
     flex-direction: column;
     margin: 0px;
